@@ -1,0 +1,63 @@
+.footer
+{
+    height: 20vh;
+    width: 100%;
+    background-color:$primary-color;
+    position:fixed;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    color:$seconday-color-white;
+    .menu
+    {
+        margin: 0 50px;
+        display: flex;
+        justify-content: start;
+        font-size:1rem;
+            ul
+            {
+            list-style-type:none;
+            padding: 0px;
+                li
+                {
+                margin: 3px 0;
+                transition: all .1s ease-in-out;
+                cursor: pointer;
+                }
+                li:hover
+                {
+                color:$accent-color;
+                transform: scale(1.2);
+                }
+            }
+    }
+    .address
+    {
+    margin: 0 50px;
+        hr
+        {
+        height: 2px;
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+        }
+        p
+        {
+           font-size: 0.8rem;
+        }
+    }
+    .contact
+    {
+        margin: 0 50px;
+        hr
+        {
+        height: 2px;
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+        }
+        p
+        {
+        font-size: 0.8rem;
+        }
+    }
+}

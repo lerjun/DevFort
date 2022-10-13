@@ -1,61 +1,16 @@
 @import "variables";
+@import "_header";
+@import "_footer";
 *{
     box-sizing: 0;
     margin: 0;
-
 }
 body{
     background-color:$seconday-color-gray;
     color:$primary-color;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* Header */
-.header
-{
-    height: 10vh;
-    width: 100%;
-    background-color: $seconday-color-white;
-    position:fixed;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 5px 3px 5px rgb(92, 90, 90, 0.739);
 
-    .logo{
-        margin: auto 20px;
-        font-size:20px;
-        font-weight: 800;
-        transition:  all .5s ease-in-out;
-        cursor: pointer;
-    }
-    .logo:hover{
-        color:$accent-color;
-    }
-    .menu{
-        margin:auto 20px;
-
-        ul{
-            display: flex;
-            list-style-type: none;
-            margin:auto 20px;
-
-            li {
-                margin:0 10px;
-                cursor: pointer;
-                transition: all 0.1s ease-in-out;
-            }
-            li:hover{
-                color:$accent-color;
-                transform: scale(1.2);
-                font-weight: 600;
-             }
-        }
-    }
-   
-}
-
-/*Header*/
-
-/* Main Header */
 .main-header
 {
     height: 100vh;
@@ -113,74 +68,30 @@ body{
     color: $accent-color;
 }
 
-/* Main Header */
-/* margin: top left bottom right; */
-
-
-/* Footer */
-.footer
+.section
 {
-    height: 20vh;
+    height: 80vh;
     width: 100%;
-    background-color:$primary-color;
-    position:absolute;
-    bottom:0;
-    display: flex;
-    justify-content: center;
-    padding-top:20px;
-    color:$seconday-color-white;
-    .menu
+    background-color: $seconday-color-white;
+
+    .row
     {
-        margin: 0 50px;
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: start;
-        font-size:1rem;
-            ul
-            {
-            list-style-type:none;
-            padding: 0px;
-                li
-                {
-                margin: 3px 0;
-                transition: all .1s ease-in-out;
-                cursor: pointer;
-                }
-                li:hover
-                {
-                color:$accent-color;
-                transform: scale(1.2);
-                }
+        flex-direction: row;
+        .column
+        {
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            display: flex;
+            .card   {
+                height: 50rem;
+                width: 30rem;             
+                border: 1px solid $shadow-color;  
             }
-    }
-    .address
-    {
-    margin: 0 50px;
-        hr
-        {
-        height: 2px;
-        background-color: $accent-color;
-        border: 1px solid $accent-color;
-        }
-        p
-        {
-           font-size: 0.8rem;
         }
     }
-    .contact
-    {
-        margin: 0 50px;
-        hr
-        {
-        height: 2px;
-        background-color: $accent-color;
-        border: 1px solid $accent-color;
-        }
-        p
-        {
-        font-size: 0.8rem;
-        }
-    }
+
 }
-
-
-/* Footer */

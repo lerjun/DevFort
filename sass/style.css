@@ -1,15 +1,3 @@
-* {
-  box-sizing: 0;
-  margin: 0;
-}
-
-body {
-  background-color: rgb(210, 210, 210);
-  color: rgb(45, 45, 93);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Header */
 .header {
   height: 10vh;
   width: 100%;
@@ -48,64 +36,11 @@ body {
   font-weight: 600;
 }
 
-/*Header*/
-/* Main Header */
-.main-header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
-.main-header .title {
-  margin: auto 0;
-  width: 100%;
-  padding: 0 50px;
-}
-.main-header .title h1 {
-  font-size: 4rem;
-  font-weight: 900;
-}
-.main-header .title hr {
-  height: 2px;
-  background-color: orangered;
-  border: 1px solid orangered;
-  width: 70%;
-  margin: 10px 0;
-}
-.main-header .title button {
-  padding: 10px 20px;
-  background-color: rgb(45, 45, 93);
-  color: white;
-  border: 2px solid rgb(45, 45, 93);
-  border-radius: 10px;
-  margin: 10px 0;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-.main-header .title button:hover {
-  color: rgb(45, 45, 93);
-  border: 2px solid rgb(45, 45, 93);
-  background-color: transparent;
-}
-.main-header .header-img {
-  width: 100%;
-  background-image: url("/public/media/pexels-pixabay-48817.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.point {
-  color: orangered;
-}
-
-/* Main Header */
-/* margin: top left bottom right; */
-/* Footer */
 .footer {
   height: 20vh;
   width: 100%;
   background-color: rgb(45, 45, 93);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -154,4 +89,84 @@ body {
   font-size: 0.8rem;
 }
 
-/* Footer *//*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(210, 210, 210);
+  color: rgb(45, 45, 93);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.main-header .title {
+  margin: auto 0;
+  width: 100%;
+  padding: 0 50px;
+}
+.main-header .title h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.main-header .title hr {
+  height: 2px;
+  background-color: orangered;
+  border: 1px solid orangered;
+  width: 70%;
+  margin: 10px 0;
+}
+.main-header .title button {
+  padding: 10px 20px;
+  background-color: rgb(45, 45, 93);
+  color: white;
+  border: 2px solid rgb(45, 45, 93);
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.main-header .title button:hover {
+  color: rgb(45, 45, 93);
+  border: 2px solid rgb(45, 45, 93);
+  background-color: transparent;
+}
+.main-header .header-img {
+  width: 100%;
+  background-image: url("/public/media/pexels-pixabay-48817.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.point {
+  color: orangered;
+}
+
+.section {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+}
+.section .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.section .row .column {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+}
+.section .row .column .card {
+  height: 50rem;
+  width: 30rem;
+  border: 1px solid rgba(92, 90, 90, 0.739);
+}/*# sourceMappingURL=style.css.map */
